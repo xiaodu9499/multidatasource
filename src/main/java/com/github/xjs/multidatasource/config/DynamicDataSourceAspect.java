@@ -15,7 +15,7 @@ public class DynamicDataSourceAspect {
      * 定义切入点：
      *  有@DataSourceAnnotation注解的方法
      */
-    @Pointcut("@annotation(com.mamcharge.techc.demo.config.DataSourceAnnotation) || @within(com.mamcharge.techc.demo.config.DataSourceAnnotation)")
+    @Pointcut("@annotation(com.github.xjs.multidatasource.config.DataSourceAnnotation) || @within(com.github.xjs.multidatasource.config.DataSourceAnnotation)")
     public void serviceMethodPointcut(){}
 
     /**
